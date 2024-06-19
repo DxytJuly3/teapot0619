@@ -1,0 +1,12 @@
+Source: teapot-opengl-test
+Section: graphics
+Priority: optional
+Maintainer: DxytJuly <dxyt2002@163.com>
+Build-Depends: debhelper (>=9), libgl1-mesa-dev, freeglut3-dev
+Standards-Version: 4.5.0
+
+Package: teapot-opengl-test
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: 
+ This is just a teapot rendered with OpenGL.

@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	qmake
+	make
+
+override_dh_auto_install:
+	install -d $(CURDIR)/debian/teapot-opengl-test/usr/bin
+	install teapot $(CURDIR)/debian/teapot-opengl-test/usr/bin/
